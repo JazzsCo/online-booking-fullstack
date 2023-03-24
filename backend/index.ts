@@ -1,6 +1,6 @@
+import { availability } from "./Data/data";
 import express, { Request, Response } from "express";
 import cors from "cors";
-import availability from "./Data/data";
 
 const app = express();
 

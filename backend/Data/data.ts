@@ -1,4 +1,17 @@
-const availability = [
+export interface Availability {
+  date: string;
+  month: string;
+  slots: Slot[];
+}
+
+interface Slot {
+  time: string;
+  reserved: number;
+  totalAvailable: number;
+  availableSlot: number;
+}
+
+export const availability: Availability[] = [
   {
     date: "03/03/2023",
     month: "2",
@@ -510,5 +523,3 @@ const availability = [
     ],
   },
 ];
-
-module.exports = availability;

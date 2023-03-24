@@ -1,9 +1,6 @@
-import React from "react";
 import { Button } from "@mui/material";
-import DriveEtaSharpIcon from "@mui/icons-material/DriveEtaSharp";
-import StyleIcon from "@mui/icons-material/Style";
 
-function App() {
+const PassportApp = () => {
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto", marginTop: "15rem" }}>
       <div
@@ -16,22 +13,23 @@ function App() {
       >
         <Button variant="outlined" style={{ marginBottom: 10 }}>
           <a
-            href="/passport"
+            href="/create-booking"
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            Passport App
+            Create Booking
           </a>
-          <StyleIcon />
         </Button>
         <Button variant="outlined">
-          <a href="/bus" style={{ textDecoration: "none", color: "inherit" }}>
-            Bus App
+          <a
+            href="/check-booking"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Check Booking
           </a>
-          <DriveEtaSharpIcon />
         </Button>
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default PassportApp;
