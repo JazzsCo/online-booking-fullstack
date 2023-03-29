@@ -134,3 +134,7 @@ export const getBuses = (from: string, to: string) => {
   // console.log(startOrStopStationsBusses);
   return directBusses;
 };
+
+const testFunc = () => {
+  console.log("ko ko yay ");
+};
