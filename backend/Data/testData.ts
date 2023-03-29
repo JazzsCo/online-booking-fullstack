@@ -59,6 +59,50 @@ export const getAllStations = () => {
   return allStationNames;
 };
 
+// export const getBusses = (start: string, stop: string) => {
+//   const startStationProvidedByUser = start.toLowerCase();
+//   const stopStationProvidedByUser = stop.toLowerCase();
+//   const stationsThatIncludeStartOrStopStation = [];
+
+//   busses.forEach((bus, index) => {
+//     bus.totalStations.forEach((station) => {
+//       const stationName = station.name.toLowerCase();
+//       if (
+//         stationName === startStationProvidedByUser ||
+//         stationName === stopStationProvidedByUser
+//       ) {
+//         if (
+//           stationsThatIncludeStartOrStopStation.find(
+//             (innerStation) => innerStation === busses[index]
+//           )
+//         ) {
+//           return;
+//         }
+//         stationsThatIncludeStartOrStopStation.push(
+//           busses[index].totalStations.map((station) => station.name)
+//         );
+//       }
+//     });
+//   });
+
+//   //got array that includes all stations that includes stations that user provided
+//   //find common stations
+//   const commonStations = stationsThatIncludeStartOrStopStation.reduce((x, y) =>
+//     x.filter((z) => y.includes(z))
+//   );
+
+//   //loop again to find that bus that reach commonStations
+//   const indirectBusses = busses.filter((bus) => {
+//     return bus.totalStations.find((station) => {
+//       return commonStations.find(
+//         (commonStation) =>
+//           station.name.toLowerCase() === commonStation.toLowerCase()
+//       );
+//     });
+//   });
+//   return indirectBusses;
+// };
+
 export const getBuses = (from: string, to: string) => {
   const fromStation = from.toLowerCase();
   const toStation = to.toLowerCase();
