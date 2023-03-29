@@ -13,19 +13,19 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/passport",
+    path: "/passport_app",
     element: <PassportApp />,
   },
   {
-    path: "/bus",
+    path: "/bus_app",
     element: <BusApp />,
   },
   {
-    path: "/check-booking",
+    path: "/passport_app/check-booking",
     element: <CheckBooking />,
   },
   {
-    path: "/create-booking",
+    path: "/passport_app/create-booking",
     element: <CreateBooking />,
   },
 ]);

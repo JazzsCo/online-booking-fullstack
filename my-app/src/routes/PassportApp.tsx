@@ -13,7 +13,7 @@ const PassportApp = () => {
       >
         <Button variant="outlined" style={{ marginBottom: 10 }}>
           <a
-            href="/create-booking"
+            href="/passport_app/create-booking"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             Create Booking
@@ -21,7 +21,7 @@ const PassportApp = () => {
         </Button>
         <Button variant="outlined">
           <a
-            href="/check-booking"
+            href="/passport_app/check-booking"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             Check Booking

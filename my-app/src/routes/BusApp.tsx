@@ -1,7 +1,9 @@
+import BusAvailability from "../components/BusAvailability/BusAvailability";
+
 const BusApp = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <BusAvailability />
     </div>
   );
 };

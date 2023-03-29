@@ -16,7 +16,7 @@ function App() {
       >
         <Button variant="outlined" style={{ marginBottom: 10 }}>
           <a
-            href="/passport"
+            href="/passport_app"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             Passport App
@@ -24,7 +24,10 @@ function App() {
           <StyleIcon />
         </Button>
         <Button variant="outlined">
-          <a href="/bus" style={{ textDecoration: "none", color: "inherit" }}>
+          <a
+            href="/bus_app"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
             Bus App
           </a>
           <DriveEtaSharpIcon />
