@@ -1,8 +1,22 @@
 import { Button } from "@mui/material";
+import { useContext } from "react";
+import { PassportAppContext } from "../contexts/PassportAppContext";
 
 const PassportApp = () => {
+  const { handleUpdate, ...data } = useContext(PassportAppContext);
+  console.log("context data: ", data);
+
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto", marginTop: "15rem" }}>
+      <Button
+        variant="outlined"
+        onClick={() => {
+          console.log("updating...");
+          handleUpdate({ ...data, time: 20 });
+        }}
+      >
+        Update
+      </Button>
       <div
         style={{
           display: "flex",

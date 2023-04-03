@@ -6,6 +6,7 @@ import CheckBooking from "./routes/CheckBooking";
 import CreateBooking from "./routes/CreateBooking";
 import PassportApp from "./routes/PassportApp";
 import BusApp from "./routes/BusApp";
+import { PassportAppProvider } from "./contexts/PassportAppContext";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/passport_app",
-    element: <PassportApp />,
+    element: (
+      <PassportAppProvider>
+        <PassportApp />
+      </PassportAppProvider>
+    ),
   },
   {
     path: "/bus_app",

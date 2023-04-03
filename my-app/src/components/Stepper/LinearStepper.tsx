@@ -9,6 +9,7 @@ import dayjs, { Dayjs } from "dayjs";
 import TimePicker, { Availability } from "../TimePicker/TimePicker";
 import InputGroup from "../Form/InputGroup";
 import DatePicker from "../DatePicker/DatePicker";
+import { PassportAppContext } from "../../contexts/PassportAppContext";
 
 const steps = [
   "Select campaign settings",
@@ -23,6 +24,8 @@ export default function LinearStepper() {
   const [availability, setAvailability] = React.useState<Availability[]>();
   const [time, setTime] = React.useState<string>();
   const [userInfo, setUserInfo] = React.useState<any>();
+  const userBookingData = React.useContext(PassportAppContext);
+  console.log("user book", userBookingData);
 
   const handleChangeMonth = async () => {
     const url = `http://localhost:5000/available?month=${
